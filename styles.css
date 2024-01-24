@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #D1884F;
+    --secondary-color: #008AAA;
+    --tertiary-color: #3BBADB;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    background-color: var(--tertiary-color);
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+section article {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
